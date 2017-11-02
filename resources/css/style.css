@@ -1,0 +1,228 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+header {
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.headline {
+  background-color: white;
+  padding: 1rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+}
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  border-style: none;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  padding: 1rem 0px;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-position: center;
+    background-size: cover;
+    height: 22rem;
+    padding-top: 0;
+  }
+
+nav.container {
+  max-width: 100%;
+}
+
+.headline {
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+}
+
+.headline h1 {
+  font-size: 1.33rem;
+}
+}
+
+@media only screen and (max-width: 560px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+.logo span {
+  display: none;
+}
+
+  .headline {
+    width: 100%;
+    padding: 0px 1rem;
+    margin: 9rem auto 0px auto;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    font-size: 0.77rem;
+    margin: 0.77rem;
+  }
+
+  .info {
+    width: auto;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
+}
